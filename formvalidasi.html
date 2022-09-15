@@ -1,0 +1,341 @@
+<HTML>
+<HEAD>
+<TITLE>Biodata</TITLE>
+<!-This is the First Validation -->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function validate(){
+submitOK="True"
+x=document.form1
+
+name1=x.uname.value
+if (name1.length==0)
+ {
+ alert("Username harus diisi.")
+ submitOK="False"
+ }
+ else if (name1.length>20) {
+  alert("Username tidak boleh >20 karakter.")
+ submitOK="False"
+ }
+
+Fname2=x.fname.value
+if (Fname2.length==0)
+ {
+ alert("Nama depan harus diisi.")
+ submitOK="False"
+ }
+
+Lname3=x.lname.value
+if (Lname3.length==0)
+ {
+ alert("Nama belakang tidak boleh kosong.")
+ submitOK="False"
+ }
+
+
+//validasi radiobutton
+var counter=0;
+jk=x.gender.length;
+for (i=0; i < jk; i++) {
+if (x.gender[i].checked) counter++;
+}
+
+if(counter==0) {alert("Pilih salah satu gender.")};
+//validasi radiobutton
+
+
+ //validasi check box
+cekhobi=x.hobi.length;
+for (i=0; i < cekhobi; i++) {
+if (x.hobi[i].checked) counter++;
+}
+
+if(counter==0) {alert("Pilih salah satu hobi.")};
+ //validasi check box
+
+
+almt=x.alamat.value
+if (almt.length==0 || almt.length<10)
+ {
+ alert("Alamat harus lengkap.")
+ submitOK="False"
+ }
+Phonenum=x.phone.value
+if (Phonenum.length==0)
+ {
+ alert("Nomor telepon tidak boleh kosong.")
+ submitOK="False"
+ }
+job=x.kerja.value
+if (job.length==0)
+ {
+ alert("Isi form pekerjaan.")
+ submitOK="False"
+ }
+kesan=x.komen.value
+if (kesan.length==0)
+ {
+ alert("Silakan isi Kesan dan Pesan.")
+ submitOK="False"
+ }
+
+// This is the Second Validation 
+password=x.pwd.value
+if (password.length==0)
+ {
+ alert("Password harus diisi.")
+ submitOK="False"
+ }
+verifypassword=x.pwd1.value
+if (verifypassword.length==0)
+ {
+ alert("Re-enter password harus diisi.")
+ submitOK="False"
+ }
+if (password!=verifypassword)
+{
+ alert("Password and Re-enter password harus sama!")
+ submitOK="False"
+}
+
+// This is the Third Validation 
+emailattherate=x.email.value.indexOf("@")
+if (emailattherate==-1) 
+ {
+ alert("Invalid E-mail")
+ submitOK="False"
+ }
+if (submitOK=="False") 
+ {
+return false
+ }
+}
+-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<font class="isi">
+<h2>Curriculum Vitae</h2>
+    Silakan isi biodata di bawah ini:</br>
+<FORM NAME="form1" onSubmit="return validate()" 
+action="thanks.html" method="post">
+<table class="p_align" cellspacing="5">
+<tr>
+<td><b>Login Detail</b></td>
+</tr>
+<tr>
+<td>Username</td>
+<td><INPUT NAME="uname" TYPE="text" size="24"></td>
+<td>Password</td><td>
+<INPUT TYPE="password" NAME="pwd"></td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td>Re-enter Password</td>
+<td><INPUT TYPE="password" NAME="pwd1"></td>
+</tr>
+<tr>
+<td><b>Biodata</b></td>
+</tr>
+<tr>
+<td>Nama Depan</td>
+<td><INPUT NAME="fname" TYPE="text" size="24"></td>
+<td>Nama Belakang</td>
+<td><INPUT TYPE="text" NAME="lname"></td>
+</tr>
+<tr>
+<td>Tanggal lahir</td>
+<td>
+<SELECT NAME="tgl_lahir">
+<OPTION>1</OPTION>
+<OPTION>2</OPTION>
+<OPTION>3</OPTION>
+<OPTION>4</OPTION>
+<OPTION>5</OPTION>
+<OPTION>6</OPTION>
+<OPTION>7</OPTION>
+<OPTION>8</OPTION>
+<OPTION>9</OPTION>
+<OPTION>10</OPTION>
+<OPTION>11</OPTION>
+<OPTION>12</OPTION>
+<OPTION>13</OPTION>
+<OPTION>14</OPTION>
+<OPTION>15</OPTION>
+<OPTION>16</OPTION>
+<OPTION>17</OPTION>
+<OPTION>18</OPTION>
+<OPTION>19</OPTION>
+<OPTION>20</OPTION>
+<OPTION>21</OPTION>
+<OPTION>22</OPTION>
+<OPTION>23</OPTION>
+<OPTION>24</OPTION>
+<OPTION>25</OPTION>
+<OPTION>26</OPTION>
+<OPTION>27</OPTION>
+<OPTION>28</OPTION>
+<OPTION>29</OPTION>
+<OPTION>30</OPTION>
+<OPTION>31</OPTION>
+</SELECT>   
+<select name="bln_lahir">
+<OPTION>Januari</OPTION>
+<OPTION>Februari</OPTION>
+<OPTION>Maret</OPTION>
+<OPTION>April</OPTION>
+<OPTION>Mei</OPTION>
+<OPTION>Juni</OPTION>
+<OPTION>Juli</OPTION>
+<OPTION>Agustus</OPTION>
+<OPTION>September</OPTION>
+<OPTION>Oktober</OPTION>
+<OPTION>November</OPTION>
+<OPTION>Desember</OPTION>
+</select>   
+<SELECT NAME="thn_lahir">
+<option>1970</option>
+<OPTION>1971</OPTION>
+<OPTION>1972</OPTION>
+<OPTION>1973</OPTION>
+<OPTION>1974</OPTION>
+<OPTION>1975</OPTION>
+<OPTION>1976</OPTION>
+<OPTION>1977</OPTION>
+<OPTION>1978</OPTION>
+<OPTION>1979</OPTION>
+<OPTION>1980</OPTION>
+<OPTION>1981</OPTION>
+<OPTION>1982</OPTION>
+<OPTION>1983</OPTION>
+<OPTION>1984</OPTION>
+<OPTION>1985</OPTION>
+<OPTION>1986</OPTION>
+<OPTION>1987</OPTION>
+<OPTION>1988</OPTION>
+<OPTION>1989</OPTION>
+<OPTION>1990</OPTION>
+<OPTION>1991</OPTION>
+<OPTION>1992</OPTION>
+<OPTION>1993</OPTION>
+<OPTION>1994</OPTION>
+<OPTION>1995</OPTION>
+<OPTION>1996</OPTION>
+<OPTION>1997</OPTION>
+<OPTION>1998</OPTION>
+<OPTION>1999</OPTION>
+<OPTION>2000</OPTION>
+</SELECT>	
+</td>
+<td>Jenis Kelamin</td>
+<td>
+<input name="gender" type="radio" value="laki"> 
+Laki-laki </br> 
+<input name="gender" type="radio" value="perempuan"> 
+Perempuan
+</td>
+<tr>
+<td valign="top">Alamat</td>
+<td><textarea name="alamat" cols="25"></textarea></td>
+<td valign="top">Alamat E-mail</td>
+<td valign="top"><INPUT TYPE="text" NAME="email"></td>
+</tr>
+</tr>
+<tr>
+<td>Kota</td>
+<td>
+<SELECT NAME="jlocation">
+<OPTION>Bandung</OPTION>
+<OPTION>Jakarta</OPTION>
+<OPTION>Manado</OPTION>
+<OPTION>Medan</OPTION>
+<OPTION>Padang</OPTION>
+<OPTION>Sukabumi</OPTION>
+<OPTION>Surabaya</OPTION>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td>Telepon</td>
+<td><INPUT NAME="phone" TYPE="text" size="24"></td>
+</tr>
+<tr>
+<td>Pendidikan Terakhir</td>
+<td>
+<SELECT NAME="pendidikan">
+<OPTION>SD/sederajat</OPTION>
+<OPTION>SMP/sederajat</OPTION>
+<OPTION>SMA/sederajar</OPTION>
+<OPTION>D1</OPTION>
+<OPTION>D2</OPTION>
+<OPTION>D3</OPTION>
+<OPTION>S1</OPTION>
+<option>S2</option>
+<option>S3</option>
+</SELECT>
+</td>
+</tr>
+<tr>
+<td>Pekerjaan</td>
+<td><INPUT NAME="kerja" TYPE="text" size="24"></td>
+</tr>
+<tr>
+<td valign="top">Hobi</td>
+<td>
+<table class="tekstabel">
+<tr>
+<td>
+<input name="hobi" type="checkbox" value="belajar">
+Belajar
+</td>
+<td>
+<input name="hobi" type="checkbox" value="nonton">
+Nonton
+</td>
+</tr>
+<tr>
+<td>
+<input name="hobi" type="checkbox" value="baca">
+Membaca
+</td>
+<td>
+<input name="hobi" type="checkbox" value="shopping">
+Shopping
+</td>
+</tr>
+<tr>
+<td>
+<input name="hobi" type="checkbox" value="olahraga">
+Olahraga</td>
+<td>
+<input name="hobi" type="checkbox" value="baca">
+Jalan-jalan</td>
+</tr>
+<tr>
+<td>
+<input name="hobi" type="checkbox" value="hiking">
+Hiking</td>
+<td>
+<input name="hobi" type="checkbox" value="gosip">
+Ngegosip!</td>
+</tr>
+</table>
+</tr>
+<tr>
+<td valign="top">Kesan dan Pesan</td>
+<td>
+<textarea name="komen" cols="25" rows="8"></textarea>
+</td>
+</tr>
+<tr>
+<td></br>Upload Foto (*.jpg)</td>
+<td></br><input name="upload" type="file"></td>
+</tr>
+</table>
+</BR>
+<INPUT TYPE="submit" VALUE="Submit">   
+<INPUT TYPE="reset" VALUE="Reset">
+</FORM>
